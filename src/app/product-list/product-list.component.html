@@ -10,7 +10,7 @@ can be found in the LICENSE file at http://angular.io/license
 
 <h3>
   <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
-      {{ product.name }}
+      {{ product.name }} {{ product.id }}
     </a>
   </h3>
     <p *ngIf="product.description">
