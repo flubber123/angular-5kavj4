@@ -16,12 +16,13 @@ import { ShippingComponent } from './shipping/shipping.component';
 @NgModule({
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: CartComponent },
-       { path: 'shipping', component: ShippingComponent }
+       { path: 'shipping', component: ShippingComponent },
     ])
   ],
   declarations: [
